@@ -12,5 +12,5 @@ DESC
   spec.source_files = "Sources/**/*.swift"
   spec.exclude_files = "Classes/Exclude/**/*"
   spec.requires_arc = true
-  spec.platform     = :ios, "13.0"
+  spec.platform     = :ios, "18.0"
 end
