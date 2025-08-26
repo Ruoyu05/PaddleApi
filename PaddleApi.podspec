@@ -1,16 +1,43 @@
-Pod::Spec.new do |spec|
-  spec.name         = "PaddleApi"
-  spec.version      = "0.0.1"
-  spec.summary      = "A lightweight API wrapper for Paddle SDK."
-  spec.description  = <<-DESC
+#
+# Be sure to run `pod lib lint PaddleApi.podspec' to ensure this is a
+# valid spec before submitting.
+#
+# Any lines starting with a # are optional, but their use is encouraged
+# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+#
+
+Pod::Spec.new do |s|
+  s.name             = 'PaddleApi'
+  s.version          = '0.0.1'
+  s.summary          = 'A lightweight API wrapper for Paddle SDK.'
+
+# This description is used to generate tags and improve search results.
+#   * Think: What does it do? Why did you write it? What is the focus?
+#   * Try to keep it short, snappy and to the point.
+#   * Write the description between the DESC delimiters below.
+#   * Finally, don't worry about the indent, CocoaPods strips it!
+
+  s.description      = <<-DESC
 PaddleApi is a Swift library for integrating the Paddle SDK.
-DESC
-  spec.homepage     = "https://github.com/Ruoyu05/PaddleApi"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
-  spec.author       = { "Ruoyu" => "xyhuyumao@gmail.com" }
-  spec.source       = { :git => "https://github.com/Ruoyu05/PaddleApi.git", :tag => spec.version.to_s }
-  spec.source_files = "Sources/**/*.swift"
-  spec.exclude_files = "Classes/Exclude/**/*"
-  spec.requires_arc = true
-  spec.platform     = :ios, "18.0"
+                       DESC
+
+  s.homepage         = 'https://github.com/Ruoyu05/PaddleApi'
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'Ruoyu05' => 'xyhuyumao@gmail.com' }
+  s.source           = { :git => 'https://github.com/Ruoyu05/PaddleApi.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
+  s.ios.deployment_target = '18.0'
+
+  s.source_files = 'PaddleApi/Classes/**/*'
+  
+  # s.resource_bundles = {
+  #   'PaddleApi' => ['PaddleApi/Assets/*.png']
+  # }
+
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
+  # s.dependency 'AFNetworking', '~> 2.3'
+  s.swift_versions  = ['5.0']
 end
