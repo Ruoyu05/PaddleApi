@@ -4,7 +4,7 @@ public class PaddleApi {
 
     public init() {}
 
-    public func whois() -> String {
+    public func greeting() -> String {
         return "Hello! I'm PaddleApi."
     }
 }
