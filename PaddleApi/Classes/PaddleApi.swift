@@ -5,6 +5,8 @@ public class PaddleApi {
     public init() {}
 
     public func greeting() -> String {
-        return "Hello! I'm PaddleApi."
+        let lib = MyLibrary()
+        return lib.greet()
+        // return "Hello! I'm PaddleApi."
     }
 }

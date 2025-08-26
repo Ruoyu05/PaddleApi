@@ -11,5 +11,8 @@ DESC
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Ruoyu05' => 'xyhuyumao@gmail.com' }
   s.source           = { :git => 'https://github.com/Ruoyu05/PaddleApi.git', :tag => s.version.to_s }
-  s.source_files     = 'PaddleApi/Classes/**/*.{swift}'
+
+  # 让 Pod 支持 Swift + Objective-C
+  s.source_files     = 'PaddleApi/Classes/**/*.{swift,h,m}', 'PaddleApi/Private/**/*.h'
+  s.public_header_files = 'PaddleApi/Classes/**/*.h'
 end
