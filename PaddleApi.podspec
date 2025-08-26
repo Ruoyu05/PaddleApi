@@ -13,6 +13,6 @@ DESC
   s.source           = { :git => 'https://github.com/Ruoyu05/PaddleApi.git', :tag => s.version.to_s }
 
   # 让 Pod 支持 Swift + Objective-C
-  s.source_files     = 'PaddleApi/Classes/**/*.{swift,h,m}', 'PaddleApi/Private/**/*.h'
+  s.source_files     = 'PaddleApi/**/*.{swift,h,m}'
   s.public_header_files = 'PaddleApi/Classes/**/*.h'
 end
