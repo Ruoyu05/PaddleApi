@@ -2,11 +2,9 @@ import Foundation
 
 public class PaddleApi {
 
-    public init() throws {
-       
-    }
+    public init() {}
 
-    public func downloadModel(url: URL, fileName: String, completion: @escaping (Result<URL, Error>) -> Void) {
-       
+    public func whois() -> String {
+        return "Hello! I'm PaddleApi."
     }
 }
